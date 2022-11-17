@@ -160,9 +160,14 @@ button {
     border: none;
 }
 
-a {
+.finish-button {
     text-decoration: none;
     color: #FFF;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 a:hover {

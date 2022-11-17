@@ -120,9 +120,14 @@ button {
     border: none;
 }
 
+.finished-button {
+    color: #FFF;
+    text-decoration: none;
+}
+
 a {
     text-decoration: none;
-    color: #FFF;
+    color: black;
 }
 
 a:hover {
