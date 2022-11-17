@@ -43,6 +43,7 @@ nav{
     text-decoration: none;
     padding: 0.5rem 0.5rem;
     display: block;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .search-bar {
@@ -62,12 +63,23 @@ nav{
     
 }
 
+p {
+    font-family: 'Work Sans', sans-serif;
+}
+
 .main-content {
     display: flex;
 }
 
 h1 {
     margin-left: 0.5rem;
+    font-size: 2rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h2 {
+    margin-left: 0.5rem;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .left-content {
@@ -106,6 +118,7 @@ button{
     width: 94%;
     margin:0 0 2rem 0.5rem;
     font-family: 'Work Sans', sans-serif;
+    height: 55px;
 }
 
 .right-content {
@@ -211,13 +224,16 @@ footer {
         display: inline-block;
     }
 
-    h1 {
-        font-size: 3rem;
-    }
+
 }
 
 @media (max-width:500px) {
     h1 {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+
+    h2 {
         font-size: 1rem;
         margin-left: 0.5rem;
     }
@@ -228,13 +244,9 @@ footer {
     }
 
     .bottom-text p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         
     }
-
-    /* .first-layer p {
-        font-size: 0.5rem;
-    } */
 
     .second-layer {
         display: flex;

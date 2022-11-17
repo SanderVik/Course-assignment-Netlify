@@ -43,6 +43,7 @@ nav{
     text-decoration: none;
     padding: 0.5rem 0.5rem;
     display: block;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .search-bar {
@@ -107,7 +108,7 @@ h1 {
 .close-button {
     display: flex;
     justify-content: center;
-    margin: 3rem 0 3rem 0;
+    margin: 3rem 0 3.7rem 0;
 }
 
 button {
