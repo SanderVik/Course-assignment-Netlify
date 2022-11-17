@@ -196,6 +196,10 @@ footer {
 
 }
 
+.bottoms-text {
+    margin: 45px 0 0 20px;
+}
+
 .icons {
     text-align: end;
     padding: 0 1rem 1rem 0;
@@ -253,7 +257,7 @@ footer {
 }
 
 @media (max-width:400px) {
-    .bottom-text {
+    .bottoms-text {
         font-size: 10px;
         margin: 45px 0 0 20px;
     }
