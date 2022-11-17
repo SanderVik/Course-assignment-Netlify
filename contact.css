@@ -179,9 +179,13 @@ footer {
 
 }
 
-
 @media (max-width: 400px) {
     h1 {
         font-size: 1.5em;
+    }
+
+    .bottom-text {
+        font-size: 10px;
+        margin: 45px 0 0 20px;
     }
 }
