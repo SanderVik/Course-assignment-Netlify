@@ -31,6 +31,7 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
+    <script defer src="buypage.js"></script>
   </head>
   <body>
     <header>
@@ -51,18 +52,41 @@
           ><i class="fa-solid fa-bars"></i
         ></label>
         <nav class="menu">
-          <a class="button" href="index.html">Home</a>
-          <a class="button" href="#">Profile</a>
-          <a class="button" href="buypage.html">Cart</a>
+          <a class="button" href="#">Logg inn</a>
+          <a class="button" href="buypage.html">Handlevogn</a>
+          <a class="button" href="contact.html">Kontakt oss</a>
         </nav>
       </div>
     </header>
     <main>
       <div class="container">
-        <p class="text-main">Størrelse |</p>
-        <p class="text-main">Kjønn |</p>
-        <p class="text-main">Farge |</p>
-        <p class="text-main">Produkter |</p>
+        <button id="størrelse-button" class="dropdown-button">Størrelse</button>
+        <ul id="drop-down" class="drop-down">
+          <li><a href="#">Liten</a></li>
+          <li><a href="#">Medium</a></li>
+          <li><a href="#">Stor</a></li>
+        </ul>
+
+        <button id="kjønn-button" class="dropdown-button">Kjønn</button>
+        <ul id="drop-down-2" class="drop-down">
+          <li><a href="#">Mann</a></li>
+          <li><a href="#">Kvinne</a></li>
+          <li><a href="#">Annet</a></li>
+        </ul>
+
+        <button id="farge-button" class="dropdown-button">Farge</button>
+        <ul id="drop-down-3" class="drop-down">
+          <li><a href="#">Blå</a></li>
+          <li><a href="#">Rød</a></li>
+          <li><a href="#">Svart</a></li>
+        </ul>
+
+        <button id="produkter-button" class="dropdown-button">Produkter</button>
+        <ul id="drop-down-4" class="drop-down">
+          <li><a href="#">Jakke</a></li>
+          <li><a href="#">Regn jakke</a></li>
+          <li><a href="#">Ull jakke</a></li>
+        </ul>
       </div>
       <div class="main-content">
         <div class="left-content">
@@ -82,25 +106,90 @@
             <p class="price-tag">$299</p>
           </div>
           <div class="wrapper">
-            <p class="">Vanntett</p>
-            <p>Høy rive</p>
-            <p>Toppmodell</p>
+            <p>Fri frakt over kr 1000</p>
+            <p>Gratis retur</p>
+            <p>10+ på lager</p>
           </div>
           <h2>Størrelse:</h2>
           <div class="box">
-            <div class="boxes">S</div>
-            <div class="boxes">M</div>
-            <div class="boxes">L</div>
-            <div class="boxes">XL</div>
+            <a href="#"><div class="boxes">S</div></a>
+            <a href="#"><div class="boxes">M</div></a>
+            <a href="#"><div class="boxes">L</div></a>
+            <a href="#"><div class="boxes">XL</div></a>
           </div>
-          <button>
+          <button class="finish-button">
             <a class="finish-button" href="checkout.html"
               >Legg til i handlekurven</a
             >
           </button>
         </div>
       </div>
-      <div class="white"></div>
+      <div class="more-products">
+        <h3>Andre produkter</h3>
+        <div class="wrap">
+          <div class="cloth">
+            <img src="images/jacket1.jpg" alt="Blue jacket" />
+            <p class="text-cloth">
+              <a href="buypage.html">SAILING JACKET</a>
+            </p>
+            <p class="text-cloth">kr 499</p>
+          </div>
+
+          <div class="cloth">
+            <img src="images/jacket2.jpg" alt="Grey Jacket" />
+            <p class="text-cloth">
+              <a href="buypage.html">SEVEN JACKET</a>
+            </p>
+            <p class="text-cloth">kr 399</p>
+          </div>
+
+          <div class="cloth">
+            <img src="images/jacket3.jpg" alt="Bubbly Jacket" />
+            <p class="text-cloth">
+              <a href="buypage.html">ERVIK JACKET</a>
+            </p>
+            <p class="text-cloth">kr 499</p>
+          </div>
+
+          <div class="cloth">
+            <img src="images/jacket4.jpg" alt="Rain Jacket" />
+            <p class="text-cloth">
+              <a href="buypage.html">LOKE JACKET</a>
+            </p>
+            <p class="text-cloth">kr 599</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vurderinger">
+        <div class="first-comment">
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p class="">av Peder</p>
+          </div>
+          <h4>Godt fornøyd</h4>
+          <p>Kjempe god jakke, har ingenting og klage på.</p>
+        </div>
+        <div class="second-comment">
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p class="">av Mauritz</p>
+          </div>
+          <h4>Bra Produkt</h4>
+          <p>
+            Veldig god jakke, men den er ikke like tett som de andre jeg pleide
+            og. Så jeg vil ikke gitt den 5 stjerner for hvor lite insulert den
+            er.
+          </p>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer-main">
@@ -111,10 +200,16 @@
         </div>
       </div>
       <div class="icons">
-        <i class="fa-brands fa-instagram"></i>
+        <a href="https://www.facebook.com/zuck">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
         <i class="fa-brands fa-snapchat"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <a href="https://www.facebook.com/zuck">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/elonmusk">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
       </div>
     </footer>
   </body>

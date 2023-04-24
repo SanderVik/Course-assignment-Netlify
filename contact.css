@@ -115,6 +115,10 @@ button {
     padding: 0;
 }
 
+.input-box {
+    height: 100px;
+}
+
 .white {
     height: 191px;
 }

@@ -144,14 +144,45 @@ h1 {
 .boxes {
     border: 1px solid black;
     padding: 15px;
+    margin: 1px;
 
 }
 
-.white {
-    height: 200px;
+.container {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: start;
+    padding-bottom: 13px;
 }
 
-button {
+.drop-down {
+    position: absolute;
+    left: 0;
+    display: none;
+    padding: 0;
+    margin: 30px 0 0 10px;
+    list-style: none;
+    border: 1px solid gray;
+    z-index: 1;
+    background-color: #418ABE;
+    border: none;
+}
+  
+.dropdown-button {
+    background-color: white;
+    border: 1px solid gray;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.finish-button {
+    text-decoration: none;
+    color: #FFF;
     width: 61%;
     height: 50px;
     margin: 3rem 0 1rem 0;
@@ -159,11 +190,6 @@ button {
     color: #FFF;
     font-family: 'Work Sans', sans-serif;
     border: none;
-}
-
-.finish-button {
-    text-decoration: none;
-    color: #FFF;
 }
 
 a {
@@ -175,6 +201,64 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.more-products {
+    border-top: 1px solid black;
+}
+
+h3 {
+    margin-left: 45px;
+    font-size: 30px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    margin: 3rem 0 3rem 0;
+}
+
+.cloth {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% / 5);
+    min-width: 150px;
+}
+
+.cloth img{
+    width:  80%;
+    min-width: 150px;
+    margin: 1px;
+    border-bottom: 1px solid black;
+}
+
+.text-cloth {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    text-align: start;
+}
+
+
+.vurderinger {
+    border-top: 1px solid black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.first-comment {
+    margin-left: 45px;
+}
+
+.second-comment {
+    margin-left: 45px;
+}
+
 
 footer {
     background-color: #f2f2f2;

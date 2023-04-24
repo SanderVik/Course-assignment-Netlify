@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Work+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="script.js"></script>
     <!-- Hotjar Tracking Code for https://theonlyrainydays.netlify.app/index.html -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -51,66 +52,108 @@
           ><i class="fa-solid fa-bars"></i
         ></label>
         <nav class="menu">
-          <a class="button" href="index.html">Home</a>
-          <a class="button" href="#">Profile</a>
-          <a class="button" href="buypage.html">Cart</a>
+          <a class="button" href="#">Logg inn</a>
+          <a class="button" href="buypage.html">Handlevogn</a>
+          <a class="button" href="contact.html">Kontakt oss</a>
         </nav>
       </div>
     </header>
     <main>
       <div class="container">
-        <p class="text-main">Størrelse |</p>
-        <p class="text-main">Kjønn |</p>
-        <p class="text-main">Farge |</p>
-        <p class="text-main">Produkter |</p>
+        <button id="størrelse-button" class="dropdown-button">Størrelse</button>
+        <ul id="drop-down" class="drop-down">
+          <li><a href="#">Liten</a></li>
+          <li><a href="#">Medium</a></li>
+          <li><a href="#">Stor</a></li>
+        </ul>
+
+        <button id="kjønn-button" class="dropdown-button">Kjønn</button>
+        <ul id="drop-down-2" class="drop-down">
+          <li><a href="#">Mann</a></li>
+          <li><a href="#">Kvinne</a></li>
+          <li><a href="#">Annet</a></li>
+        </ul>
+
+        <button id="farge-button" class="dropdown-button">Farge</button>
+        <ul id="drop-down-3" class="drop-down">
+          <li><a href="#">Blå</a></li>
+          <li><a href="#">Rød</a></li>
+          <li><a href="#">Svart</a></li>
+        </ul>
+
+        <button id="produkter-button" class="dropdown-button">Produkter</button>
+        <ul id="drop-down-4" class="drop-down">
+          <li><a href="#">Jakke</a></li>
+          <li><a href="#">Regn jakke</a></li>
+          <li><a href="#">Ull jakke</a></li>
+        </ul>
+      </div>
       </div>
       <h1>Dame</h1>
       <div class="wrap">
         <div class="cloth">
-          <a href="buypage.html">
-            <img src="images/jacket1.jpg" alt="Blue jacket" />
-          </a>
+          <img src="images/jacket1.jpg" alt="Blue jacket" />
           <p class="text-cloth">
             <a href="buypage.html">SAILING JACKET</a>
           </p>
-          <p class="text-cloth">299$</p>
+          <p class="text-cloth">kr 499</p>
         </div>
+
         <div class="cloth">
           <img src="images/jacket2.jpg" alt="Grey Jacket" />
-          <p class="text-cloth">SEVEN JACKET</p>
-          <p class="text-cloth">299$</p>
+          <p class="text-cloth">
+            <a href="buypage.html">SEVEN JACKET</a>
+          </p>
+          <p class="text-cloth">kr 399</p>
         </div>
+
         <div class="cloth">
           <img src="images/jacket3.jpg" alt="Bubbly Jacket" />
-          <p class="text-cloth">ERVIK JACKET</p>
-          <p class="text-cloth">299$</p>
+          <p class="text-cloth">
+            <a href="buypage.html">ERVIK JACKET</a>
+          </p>
+          <p class="text-cloth">kr 499</p>
         </div>
+
         <div class="cloth">
           <img src="images/jacket4.jpg" alt="Rain Jacket" />
-          <p class="text-cloth">LOKE JACKET</p>
-          <p class="text-cloth">299$</p>
+          <p class="text-cloth">
+            <a href="buypage.html">LOKE JACKET</a>
+          </p>
+          <p class="text-cloth">kr 599</p>
         </div>
       </div>
       <div class="wrap">
         <div class="cloth">
           <img src="images/jacket1.jpg" alt="Blue jacket" />
-          <p class="text-cloth">SAILING JACKET</p>
-          <p class="text-cloth">299$</p>
+          <p class="text-cloth">
+            <a href="buypage.html">SAILING JACKET</a>
+          </p>
+          <p class="text-cloth">kr 699</p>
         </div>
+
         <div class="cloth">
           <img src="images/jacket2.jpg" alt="Grey Jacket" />
-          <p class="text-cloth">SEVEN JACKET</p>
-          <p class="text-cloth">299$</p>
+          <p class="text-cloth">
+            <a href="buypage.html">SEVEN JACKET</a>
+          </p>
+          <p class="text-cloth">kr 599</p>
         </div>
+
         <div class="cloth">
           <img src="images/jacket3.jpg" alt="Bubbly Jacket" />
-          <p class="text-cloth">ERVIK JACKET</p>
-          <p class="text-cloth">299$</p>
+          <p class="text-cloth">
+            <a href="buypage.html">ERVIK JACKET</a>
+          </p>
+          <p class="text-cloth">kr 699</p>
         </div>
+
         <div class="cloth">
           <img src="images/jacket4.jpg" alt="Rain Jacket" />
-          <p class="text-cloth">LOKE JACKET</p>
-          <p class="text-cloth">299$</p>
+          <p class="text-cloth">
+            <a href="buypage.html">LOKE JACKET</a>
+          </p>
+          <p class="text-cloth">kr 599</p>
         </div>
       </div>
     </main>
@@ -123,10 +166,16 @@
         </div>
       </div>
       <div class="icons">
-        <i class="fa-brands fa-instagram"></i>
+        <a href="https://www.facebook.com/zuck">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
         <i class="fa-brands fa-snapchat"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <a href="https://www.facebook.com/zuck">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/elonmusk">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
       </div>
     </footer>
   </body>
