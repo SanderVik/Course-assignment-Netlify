@@ -125,7 +125,6 @@ button{
 .right-content {
     width: 40%;
     height: 550px;
-    background-color: #fbf9f9;    
     margin: 1rem 0 0 1rem;
     display: flex;
     flex-direction: column;
